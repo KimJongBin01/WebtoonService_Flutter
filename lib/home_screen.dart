@@ -72,13 +72,49 @@ class _HomeScreenState extends State<HomeScreen> {
           // UI를 비율에 기반해서 유연하게 만듦
           Flexible(
             // 비율
+            flex: 2,
+            child: Container(
+              alignment: Alignment.topCenter,
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 100,
+                  ),
+                  Text(
+                    'Pomodoros_JB',
+                    style: TextStyle(
+                      color: Theme.of(context).textTheme.headline1!.color,
+                      fontSize: 50,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  Text(
+                    'designed by Omar Sherif',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Theme.of(context).cardColor,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          // UI를 비율에 기반해서 유연하게 만듦
+          Flexible(
+            // 비율
             flex: 1,
             child: Container(
-              alignment: Alignment.bottomCenter,
+              decoration: BoxDecoration(
+                color: Theme.of(context).cardColor,
+                borderRadius: BorderRadius.circular(50),
+              ),
+              alignment: Alignment.center,
               child: Text(
                 format(totalSeconds),
                 style: TextStyle(
-                  color: Theme.of(context).cardColor,
+                  color: Theme.of(context).textTheme.headline1!.color,
                   fontSize: 90,
                   fontWeight: FontWeight.w600,
                 ),
@@ -89,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
           // UI를 비율에 기반해서 유연하게 만듦
           Flexible(
             // 비율
-            flex: 3,
+            flex: 2,
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,

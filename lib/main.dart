@@ -12,13 +12,13 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        backgroundColor: const Color(0xFFE7626C),
+        backgroundColor: const Color.fromARGB(255, 85, 49, 204),
         textTheme: const TextTheme(
           headline1: TextStyle(
-            color: Color(0xFF232B55),
+            color: Color(0xFFFFFFFF),
           ),
         ),
-        cardColor: const Color(0xFFF4EDDB),
+        cardColor: const Color(0xFF000000),
       ),
       home: const HomeScreen(),
     );
