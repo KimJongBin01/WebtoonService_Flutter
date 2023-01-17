@@ -56,10 +56,10 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(
                   height: 50,
                 ),
+
                 // Expanded는 화면의 남는 공간을 차지하는 위젯,
                 // Row나 Column의 child를 학장해서 그 child가 남는 공간을 채우게 함
                 // ListView가 무한정의 높이를 가짐
-
                 Expanded(child: makeList(snapshot)),
               ],
             );

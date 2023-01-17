@@ -3,7 +3,7 @@ import 'package:toonflix/models/webtoon_detail_model.dart';
 import 'package:toonflix/models/webtoon_episode_model.dart';
 import 'package:toonflix/services/api_service.dart';
 
-import '../widget/eqpisode.dart';
+import '../widget/episode.dart';
 
 class DetailScreen extends StatefulWidget {
   final String title, thumb, id;
